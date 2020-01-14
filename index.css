@@ -1,10 +1,18 @@
-html,
-body {
-  height: 100%;
+* {
   margin: 0px;
   padding: 0px;
 }
 
+html {
+  font-size: 62.5%; /*1rem = 10px, 10/16px = 62.5%*/
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+a,
 a:link,
 a:visited,
 a:hover,
@@ -25,24 +33,15 @@ a:active {
   overflow-x: hidden;
 }
 
-.header:hover #profileImg {
-  transform: translateX(50%);
-}
-
-.header:hover #projectsImg {
-  transform: translateX(50%);
-}
-
-.header:hover #contactsImg {
-  transform: translateX(50%);
-}
-
+.header:hover #profileImg,
+.header:hover #projectsImg,
+.header:hover #contactsImg,
 .header:hover #moreImg {
   transform: translateX(50%);
 }
 
-html {
-  font-size: 62.5%; /*1rem = 10px, 10/16px = 62.5%*/
+#browser {
+  font-size: 30px;
 }
 
 h3 {
@@ -51,7 +50,7 @@ h3 {
   user-select: none;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  margin: 0px;
+
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(#ce555c, #19648b);
   -webkit-background-clip: text;
@@ -88,9 +87,9 @@ h3 {
 #projectsText,
 #contactsText,
 #moreText {
+  margin: 0px;
   position: absolute;
   top: 30%;
-  margin: 0px;
 }
 
 /* Portrait tablets and small desktops */
