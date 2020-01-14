@@ -1,0 +1,115 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+
+.header {
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.header:hover #profileImg {
+  transform: translateX(50%);
+}
+
+.header:hover #projectsImg {
+  transform: translateX(50%);
+}
+
+.header:hover #contactsImg {
+  transform: translateX(50%);
+}
+
+.header:hover #moreImg {
+  transform: translateX(50%);
+}
+
+html {
+  font-size: 62.5%; /*1rem = 10px, 10/16px = 62.5%*/
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  user-select: none;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0px;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#ce555c, #19648b);
+  -webkit-background-clip: text;
+}
+
+#profileImg,
+#projectsImg,
+#contactsImg,
+#moreImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  transition: transform 1s;
+}
+
+#profile,
+#projects,
+#contacts,
+#more {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#profile:hover,
+#contacts:hover,
+#projects:hover,
+#more:hover {
+}
+
+#profileText,
+#projectsText,
+#contactsText,
+#moreText {
+  position: absolute;
+  top: 30%;
+  margin: 0px;
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) {
+  h3 {
+    font-size: 8rem;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  h3 {
+    font-size: 6rem;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 4rem;
+  }
+}
