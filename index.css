@@ -30,14 +30,25 @@ a:active {
 
 .header {
   padding: 0px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.header:hover #profileImg,
-.header:hover #projectsImg,
-.header:hover #contactsImg,
-.header:hover #moreImg {
-  transform: translateX(50%);
+@media (hover: hover) {
+  .header:hover #profileImg,
+  .header:hover #projectsImg,
+  .header:hover #contactsImg,
+  .header:hover #moreImg {
+    transform: translateX(50%);
+  }
+}
+
+@media (hover: none) {
+  #profileImg,
+  #projectsImg,
+  #contactsImg,
+  #moreImg {
+    left: 10rem;
+  }
 }
 
 #browser {
