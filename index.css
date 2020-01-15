@@ -38,7 +38,7 @@ a:active {
   .header:hover #projectsImg,
   .header:hover #contactsImg,
   .header:hover #moreImg {
-    transform: translateX(50%);
+    transform: translateX(10rem);
   }
 }
 
